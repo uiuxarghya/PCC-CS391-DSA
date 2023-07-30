@@ -1,36 +1,24 @@
-//  infix expression to postfix expression conversion using stack in c
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-void push(
-    char *stack,
-    int *top,
-    char value)
+void push(char *stack, int *top, char value)
 {
     stack[++(*top)] = value;
-
-    return;
 }
 
-char pop(
-    char *stack,
-    int *top)
+char pop(char *stack, int *top)
 {
     return stack[(*top)--];
 }
 
-int main()
+void convertToPostfix(char *expression)
 {
     char *stack = (char *)malloc(100 * sizeof(char));
     int top = -1;
-
-    char *expression = (char *)malloc(100 * sizeof(char));
-    printf("Enter the infix expression: ");
-    scanf("%s", expression);
-
     int length = strlen(expression);
+
+    printf("Postfix Expression: ");
 
     for (int i = 0; i < length; i++)
     {
@@ -68,6 +56,19 @@ int main()
         printf("%c", pop(stack, &top));
     }
     printf("\n");
+
+    free(stack);
+}
+
+int main()
+{
+    char *expression = (char *)malloc(100 * sizeof(char));
+    printf("Enter the infix expression: ");
+    scanf("%s", expression);
+
+    convertToPostfix(expression);
+
+    free(expression);
 
     return 0;
 }

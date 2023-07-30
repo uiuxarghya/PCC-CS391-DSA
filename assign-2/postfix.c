@@ -1,5 +1,3 @@
-// postfix expression evaluation using stack in c
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,8 +8,6 @@ void push(
     int value)
 {
     stack[++(*top)] = value;
-
-    return;
 }
 
 int pop(

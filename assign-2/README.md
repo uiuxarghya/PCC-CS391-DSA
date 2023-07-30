@@ -10,8 +10,8 @@
 
 ## Solutions
 
-- [Stack](./1.c)
-- [Postfix Evaluation](./2.c)
-- [Infix to Postfix](./3.c)
-- [Prefix to Postfix](./4.c)
-- [Tower of Hanoi](./5.c)
+- [Stack](./stack.c)
+- [Postfix Evaluation](./postfix.c)
+- [Infix to Postfix](./infix2postfix.c)
+- [Prefix to Postfix](./prefix2postfix.c)
+- [Tower of Hanoi](./toh.c)

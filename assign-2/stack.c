@@ -1,34 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void push(
-    int *stack,
-    int *top,
-    int value)
+void push(int *stack, int *top, int value)
 {
     stack[++(*top)] = value;
-
-    return;
 }
 
-int pop(
-    int *stack,
-    int *top)
+int pop(int *stack, int *top)
 {
     return stack[(*top)--];
 }
 
-void display(
-    int *stack,
-    int top)
+void display(int *stack, int top)
 {
     for (int i = 0; i <= top; i++)
     {
         printf("%d ", stack[i]);
     }
     printf("\n");
-
-    return;
 }
 
 int main()
@@ -41,7 +30,7 @@ int main()
 
     while (1)
     {
-        printf("1. Push\n");
+        printf("\n1. Push\n");
         printf("2. Pop\n");
         printf("3. Display\n");
         printf("4. Exit\n");
@@ -59,21 +48,22 @@ int main()
         case 2:
             if (top == -1)
             {
-                printf("Stack is empty\n");
+                printf("\nStack is empty\n");
             }
             else
             {
-                printf("Popped value: %d\n", pop(stack, &top));
+                printf("\nPopped value: %d\n", pop(stack, &top));
             }
             break;
 
         case 3:
             if (top == -1)
             {
-                printf("Stack is empty\n");
+                printf("\nStack is empty.\n");
             }
             else
             {
+                printf("\n");
                 display(stack, top);
             }
             break;
@@ -83,7 +73,7 @@ int main()
             break;
 
         default:
-            printf("Invalid choice\n");
+            printf("\nInvalid choice!\n");
             break;
         }
     }

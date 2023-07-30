@@ -1,12 +1,6 @@
-// tower of hanoi using recursion in c
-
 #include <stdio.h>
 
-void tower_of_hanoi(
-    int n,
-    char source,
-    char destination,
-    char auxiliary)
+void tower_of_hanoi(int n, char source, char destination, char auxiliary)
 {
     if (n == 1)
     {
