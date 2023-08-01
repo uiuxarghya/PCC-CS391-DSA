@@ -2,17 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-void push(
-    int *stack,
-    int *top,
-    int value)
+void push(int *stack, int *top, int value)
 {
     stack[++(*top)] = value;
 }
 
-int pop(
-    int *stack,
-    int *top)
+int pop(int *stack, int *top)
 {
     return stack[(*top)--];
 }
