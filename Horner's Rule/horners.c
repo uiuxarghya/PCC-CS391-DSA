@@ -32,7 +32,7 @@ int main() {
   scanf("%lf", &x);
 
   // calculate the value of the polynomial using Horner's rule
-  value = recurrHorner(coeff, n, x);
+  value = recurrHorner(coeff, n - 1, x);
 
   printf("\nP(%0.2f) : %0.2f\n", x, value);
 
