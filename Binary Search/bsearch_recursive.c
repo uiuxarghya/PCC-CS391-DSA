@@ -21,9 +21,9 @@ int main() {
   printf("Enter the size of the array: ");
   scanf("%d", &n);
 
-  printf("\n");
-
   int arr[n];  // declare an array of size n
+
+  printf("\nEnter the sorted array elements:\n");
 
   // ask the user for the elements of the array
   for (i = 0; i < n; i++) {
