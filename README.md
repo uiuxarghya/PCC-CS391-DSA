@@ -29,7 +29,7 @@ Go to the project directory
   cd PCC-CS391
 ```
 
-Go to the assignment directory
+Go to the specific folder
 
 ```bash
   cd <Folder Name> ...
