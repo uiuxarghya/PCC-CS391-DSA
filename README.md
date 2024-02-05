@@ -32,7 +32,7 @@ Go to the project directory
 Go to the assignment directory
 
 ```bash
-  cd assign-1 # or assign-2, assign-3, ...
+  cd <Folder Name> ...
 ```
 
 Compile the program
