@@ -35,7 +35,7 @@ void merge(int a[], int low, int mid, int high) {
 void mergeSort(int a[], int low, int high) {
 	int mid;
 	if (low < high) {
-		mid = (low + high) / 2;
+		mid = low + (high - low) / 2;
 		mergeSort(a, low, mid);
 		mergeSort(a, mid + 1, high);
 		merge(a, low, mid, high);
