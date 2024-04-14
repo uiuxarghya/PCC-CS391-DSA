@@ -60,7 +60,7 @@ int main()
   int vertices, edges, i;
   char src, dest, start;
 
-  printf("\nEnter the number of vertices (a to z): ");
+  printf("\nEnter the number of vertices: ");
   scanf("%d", &vertices);
 
   Graph *g = createGraph(vertices);
